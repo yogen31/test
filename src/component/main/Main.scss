@@ -1,0 +1,35 @@
+@import "../../style/variable";
+
+.main{
+    background-color: $color-primary;
+    text-align: center;
+    color: white;
+    &-button{
+        background-color: green;
+        position: relative;
+        border: .0625rem solid #ed017f;
+        color: #ed017f;
+        font-weight: 600;
+         
+         padding: 0.1rem 0.3rem;
+         height: auto;
+         
+         cursor:pointer;
+         text-align: center;
+    }
+    & button{
+        color: white;
+       &:hover{
+            background-color: red;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    // & button:hover{
+    //     background-color: none;
+    // }
+    // & button:focus{
+    //     outline: none;
+    // }
+}
