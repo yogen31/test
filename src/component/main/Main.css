@@ -1,0 +1,56 @@
+.navBar {
+    padding: 0 5rem;
+    display: grid;
+    min-height: 6vh;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1976d2;
+    /* position: absolute; */
+  }
+  .navBar-item i {
+    font-size: 2.5rem;
+    color: white;
+  }
+  .margin-x {
+    margin: 0 3rem 0 3rem;
+  }
+  
+  .main {
+    /* padding: 2rem; */
+    height: 94vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+  }
+  
+  .main-item:not(:last-child) {
+    border-right: 1rem solid #1976d2;
+  }
+  .navBar-item2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .open {
+    float: right;
+    padding: 0.1rem 0.2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .navBar {
+      padding: 0 0.5rem !important;
+      grid-template-columns: 1.5fr 1fr;
+    }
+  
+    .margin-x {
+      margin: 0.5rem;
+    }
+  }
+  
